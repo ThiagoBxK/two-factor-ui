@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="icon">
-        <img src="./icons/security-icon.svg" />
-      </div>
-      <h2 class="title">Authenticate Your Account</h2>
-      <p class="paragraph">
-        A 6-digit code has been sent to the email by_thiagobxk@gmail.com please
-        confirm
-      </p>
 
-      <div class="input-container">
-        <div class="input-box">
-          <input
-            type="number"
-            oninput="handleInputEvent(event, this)"
-            data-index="0"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            oninput="handleInputEvent(event, this)"
-            data-index="1"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            oninput="handleInputEvent(event, this)"
-            data-index="2"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            oninput="handleInputEvent(event, this)"
-            data-index="3"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            oninput="handleInputEvent(event, this)"
-            data-index="4"
-          />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            oninput="handleInputEvent(event, this)"
-            data-index="5"
-          />
-        </div>
-      </div>
-      <!-- <button class="submit-button disabled">Continuar</button> -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      <p class="small-paragraph">
-        * We always seek to provide a safer environment for our potential
-        employees. partners.
-      </p>
+<body>
+
+    <div class="dark-mode-toggle">
+        <input id="toggle-theme" type="checkbox" oninput="toggleTheme()">
+        <label for="toggle-theme">Alterar tema</label>
     </div>
-  </body>
+
+    <div class="two-factor-auth">
+        <div class="auth-icon">
+            <img src="./icons/security.png" />
+        </div>
+
+        <div class="auth-content">
+            <h2 class="auth-title">Two-Factor authentication</h2>
+            <p class="auth-message">
+                Enter the 6-digit verification code sent to email github@thiagobxk
+            </p>
+        </div>
+
+        <div class="auth-inputs">
+            <div class="auth-input-box">
+                <input data-index="0" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+            </div>
+            <div class="auth-input-box">
+                <input data-index="1" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+            </div>
+            <div class="auth-input-box">
+                <input data-index="2" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+            </div>
+            <div class="auth-input-box">
+                <input data-index="3" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+            </div>
+            <div class="auth-input-box">
+                <input data-index="4" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+            </div>
+            <div class="auth-input-box">
+                <input data-index="5" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+            </div>
+        </div>
+
+        <button id="auth-button" class="auth-continue-btn hidden">Continue</button>
+
+        <small>
+            * We always seek to provide a safer environment for our potential
+            employees. partners.
+        </small>
+    </div>
+</body>
+<script src="main.js"></script>
+
 </html>
