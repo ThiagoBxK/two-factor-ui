@@ -6,4 +6,4 @@
 
 - Two-factor form made with HTML, CSS and Javascript, original project with integration with nodejs and mysql database
 
-New version 2025: <img style="aspect-ratio: 1/1;" src="https://github.com/ThiagoBxK/twofactos-ui/blob/main/preview.gif" width="100%" height="auto" />
+New version 2025: <img style="aspect-ratio: 1/1;" src="https://github.com/ThiagoBxK/twofactos-ui/blob/main/preview.gif" width="50%" height="auto" />
