@@ -1,7 +1,6 @@
-let code = "";
-
 function focusOnInput(index, direction) {
   index += direction;
+
   const input = document.querySelector(
     `.auth-input-box [data-index='${index}']`
   );
@@ -16,18 +15,14 @@ function handleInputEvent(input, event) {
   if (event.code === "Backspace") focusOnInput(index, -1);
   else if (input.value.length >= input.maxLength) focusOnInput(index, 1);
 
-  updateCode();
+  showButton();
 }
 
-function toggleTheme() {
-  document.body.classList.toggle("dark-mode");
-}
-
-function updateCode() {
+function showButton() {
   const inputs = document.querySelectorAll(".auth-input-box [data-index]");
   const button = document.getElementById("auth-button");
 
-  code = "";
+  let code = "";
   for (input of inputs) code += input.value;
 
   code.length === inputs.length

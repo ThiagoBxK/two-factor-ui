@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Two-Factor UI</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,7 @@
 <body>
 
     <div class="dark-mode-toggle">
-        <input id="toggle-theme" type="checkbox" oninput="toggleTheme()">
+        <input id="toggle-theme" type="checkbox" oninput="document.body.classList.toggle('dark-mode')">
         <label for="toggle-theme">Alterar tema</label>
     </div>
 
@@ -30,27 +30,28 @@
 
         <div class="auth-inputs">
             <div class="auth-input-box">
-                <input data-index="0" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+                <input data-index="0" type="text" maxlength="1" onkeyup="handleInputEvent(this, event)" />
             </div>
             <div class="auth-input-box">
-                <input data-index="1" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+                <input data-index="1" type="text" maxlength="1" onkeyup="handleInputEvent(this, event)" />
             </div>
             <div class="auth-input-box">
-                <input data-index="2" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+                <input data-index="2" type="text" maxlength="1" onkeyup="handleInputEvent(this, event)" />
             </div>
             <div class="auth-input-box">
-                <input data-index="3" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+                <input data-index="3" type="text" maxlength="1" onkeyup="handleInputEvent(this, event)" />
             </div>
             <div class="auth-input-box">
-                <input data-index="4" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+                <input data-index="4" type="text" maxlength="1" onkeyup="handleInputEvent(this, event)" />
             </div>
             <div class="auth-input-box">
-                <input data-index="5" type="number" maxlength="1" onkeyup="handleInputEvent(this, event)" />
+                <input data-index="5" type="text" maxlength="1" onkeyup="handleInputEvent(this, event)" />
             </div>
         </div>
 
-        <button id="auth-button" class="auth-continue-btn hidden">Continue</button>
 
+
+        <button id="auth-button" class="auth-continue-btn hidden">Continue</button>
         <small>
             * We always seek to provide a safer environment for our potential
             employees. partners.
