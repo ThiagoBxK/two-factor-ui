@@ -5,4 +5,5 @@
 ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 - Two-factor form made with HTML, CSS and Javascript, original project with integration with nodejs and mysql database
-<img style="aspect-ratio: 1/1;" src="https://github.com/ThiagoBxK/twofactos-ui/blob/main/preview.gif" width="100%" height="auto" />
+<img src="https://github.com/ThiagoBxK/twofactos-ui/blob/main/preview.gif" style="aspect-ratio: 1/1; width: 100%; object-fit: cover;" />
+
